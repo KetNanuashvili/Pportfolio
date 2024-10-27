@@ -1,0 +1,102 @@
+
+
+<div class="container text-center">
+    <h2 class="portfolioH2">Resume</h2>
+    <button (click)="DownloadFile()" class="btn btn-primary mb-5 shadow border section-button background-download" style="animation-delay: 0.5s;">
+        Download PDF Resume
+    </button>
+    <div class="pb-2">
+        <div class="accordion">
+            <div class="section">
+                <button (click)="isWorkExperienceOpen = !isWorkExperienceOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 0.6s;">
+                    <div class="btn-link">Work Experience</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!isWorkExperienceOpen">></span>
+                        <span *ngIf="isWorkExperienceOpen">v</span>
+                    </div>
+                </button>
+                <div *ngIf="isWorkExperienceOpen" [ngClass]="{'show': isWorkExperienceOpen, 'hide': !isWorkExperienceOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <h2 class="mb-0">Corporate Credit Administrator</h2>
+                    <h3 class="text-primary">TBC Bank</h3>
+                    <ul>
+                        <li>Issued Jul 2021. Expires Aug 2024</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <button (click)="isEducationOpen = !isEducationOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 0.7s;">
+                    <div class="btn-link">Education</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!isEducationOpen">></span>
+                        <span *ngIf="isEducationOpen">v</span>
+                    </div>
+                </button>
+                <div *ngIf="isEducationOpen" [ngClass]="{'show': isEducationOpen, 'hide': !isEducationOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <h2 class="mb-0">Bachelor's of Faculty of Law</h2>
+                    <h3 class="text-primary">Tbilisi State University</h3>
+                    <ul>
+                        <li>Graduated from Tbilisi State University in August 2020</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <button (click)="CertificationsOpen = !CertificationsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 0.8s;">
+                    <div class="btn-link">Certifications</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!CertificationsOpen">></span>
+                        <span *ngIf="CertificationsOpen">v</span>
+                    </div>
+                </button>
+                <div *ngIf="CertificationsOpen" [ngClass]="{'show': CertificationsOpen, 'hide': !CertificationsOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <h2 class="mb-0">Certificate of Achievement in FRONT-END COURSE</h2>
+                    <h3 class="text-primary">Academy of Digital Industries</h3>
+                    <ul>
+                        <li>Issued Jul 2022. Expires Aug 2022</li>
+                    </ul>
+                    <h2 class="mb-0">Certificate of Achievement in JAVASCRIPT COURSE</h2>
+                    <h3 class="text-primary">Academy of Digital Industries</h3>
+                    <ul>
+                        <li>Issued Sep 2022. Expires Oct 2022</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section">
+                <button (click)="skillsOpen = !skillsOpen" class="btn section-button justify-content-between d-flex w-100" style="animation-delay: 0.9s;">
+                    <div class="btn-link">Skills</div>
+                    <div class="toggle-icon">
+                        <span *ngIf="!skillsOpen">></span>
+                        <span *ngIf="skillsOpen">v</span>
+                    </div>
+                </button>
+                <div *ngIf="skillsOpen" [ngClass]="{'show': skillsOpen, 'hide': !skillsOpen}" class="content" style="animation: slideIn 0.6s ease forwards;">
+                    <div class="row">
+                        <div class="col">
+                            <h3>Programming Languages:</h3>
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>TypeScript</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Frameworks:</h3>
+                            <ul>
+                                <li>Angular</li>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Other Skills:</h3>
+                            <ul>
+                                <li>Responsibility</li>
+                                <li>Ability to think logically</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

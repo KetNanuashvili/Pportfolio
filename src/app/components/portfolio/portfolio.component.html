@@ -1,0 +1,14 @@
+<h2 class="portfolio">Portfolio</h2>
+<div class="container">
+  <div class="card" *ngFor="let card of cards; let i = index" [style.animationDelay]="i * 0.2 + 's'">
+    <h3 class="title">{{ card.title }}</h3>
+    <div class="image-container">
+      <img [src]="card.image" alt="{{ card.title }}" class="card-img" />
+    </div>
+    <div class="description">{{ card.description }}</div>
+    <div class="card-details">
+      <button class="btn-view">{{ card.buttonLabel }}</button>
+      <p class="tech-stack">{{ card.technologies }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,146 @@
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.card-img-top{
+    height: 450px;
+    object-fit: cover; 
+    width: 100%;
+}
+.scroll-container {
+    overflow: hidden; 
+    height: 100%;
+    opacity: 0.7;
+}
+
+.slide-in {
+    animation: slideIn 0.8s ease forwards; 
+}
+
+.custom-card {
+    margin: 0 5px;
+}
+
+.custom-btn {
+    background-color: #FFD700; 
+    border: none; 
+    color: #fff; 
+}
+
+.carousel-inner img {
+    border-radius: 20px; 
+}
+.custom-card {
+    background-color: #313333; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+.intro{
+    background: linear-gradient(135deg, #313333, rgba(85, 64, 65, 0.8));
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px 0px 10px rgba(100, 50, 100, 0.4);
+    color: #E6F7FF; 
+    opacity: 0.95; 
+    font-weight: bold;
+    text-align: left;
+}
+
+.intro h5 {
+    font-size: 1.75em; 
+    margin-bottom: 15px; 
+    letter-spacing: 1px;
+    color: #b1c0c7; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+.intro p {
+    font-size: 1em; 
+    margin-bottom: 20px; 
+}
+
+.custom-btn {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 1), rgba(165, 42, 42, 1), rgba(128, 128, 128, 1)); 
+    border: none; 
+    color: black; 
+    padding: 10px 20px;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.custom-btn:hover {
+    background: linear-gradient(135deg, rgba(165, 42, 42, 1), rgba(139, 69, 19, 1), rgba(128, 128, 128, 1)); 
+}
+
+.carousel-inner img {
+    border-radius: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 50%; 
+}
+.scroll-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+.portfolioH2{
+    text-align: center;
+    margin-bottom: 50px;
+    color:  rgb(78, 16, 8);
+}
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    70% {
+        transform: translateX(-10%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@media (max-width: 780px ){
+    .carousel-item {
+        margin-top: 100px;
+        height: auto;
+  
+      }
+}
+@media(max-width: 500px){
+  
+    .card-img-top {
+      height: 260px;
+    }
+  
+    }
+
+    .maindiv{
+        margin-bottom: 150px;
+    }

@@ -1,0 +1,9 @@
+/* galactic-background.component.css */
+canvas {
+  position: absolute; /* Make the canvas position absolute */
+  top: 0;             /* Align to the top */
+  left: 0;            /* Align to the left */
+  width: 100%;      /* Full viewport width */
+  height: 100%;     /* Full viewport height */
+  z-index: -1;       /* Place it behind other elements */
+}
